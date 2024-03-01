@@ -140,3 +140,5 @@ This project is licensed under the LICENSE.md file for details.
 ## Acknowledgments
 
 Hat tip to anyone whose code was used Inspiration.
+
+![Test](https://raw.githubusercontent.com/poc-examples/managing-secrets/main/images/example.png "Test")
