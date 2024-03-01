@@ -20,6 +20,9 @@ Effective secrets management in Kubernetes helps in maintaining robust security 
 ### Secrets-CSI-Driver
 - Mounting Secrets as Volumes
 
+### Hybrid Configuration
+- Dynamic Secret Updates
+
 ## Why These Patterns
 
 The secret-csi-driver is primarily focused on securely injecting secrets into pods as volumes. This mechanism is particularly useful for applications that need to consume secrets in a way that is both secure and transparent to the application code, reducing the complexity of secret management within the application logic itself.
