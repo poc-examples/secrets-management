@@ -40,35 +40,19 @@ The decision to use one or both of these tools would depend on the specific requ
 
 5. **Avoiding Git Storage**: To prevent secrets from being stored in Git, it is essential to exclude secret objects from source code and configuration files. Instead of hardcoding secrets, applications should be designed to retrieve them dynamically from Kubernetes at runtime. Additionally, tools like Git hooks and linters can help prevent accidental commits of sensitive data.
 
-## How to Implement
-
-Step-by-step guide on how to implement this pattern in a project. You can refer to the included PowerPoint presentation for a more in-depth explanation.
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
 ## Prerequisites
 
 What things you need to install the software and how to install them:
 
 ```Give examples```
 
-## Installing
+## Getting Started
 
-A step by step series of examples that tell you how to get a development environment running:
-
-```Give the example```
-
-End with an example of getting some data out of the system or using it for a little demo.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Running the Tests
 
 Explain how to run the automated tests for this system. Include any relevant commands.
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system.
 
 ## Built With
 
