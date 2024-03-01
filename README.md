@@ -30,18 +30,6 @@ On the other hand, the external-secrets-operator facilitates the integration of 
 
 The decision to use one or both of these tools would depend on the specific requirements of your secrets management strategy. If your environment requires robust integration with external secret stores and secure, efficient injection of those secrets into OpenShift workloads, leveraging both tools together could offer a comprehensive solution
 
-## How It Works
-
-1. **Creation and Storage**: Secrets are created and stored within the Kubernetes etcd database, a key-value store used to hold all cluster data. These secrets are encoded in base64 format, which is not encryption but merely an encoding mechanism to handle binary data. It is crucial that access to etcd is well-protected and that etcd itself is configured to store data securely, potentially using additional encryption methods.
-
-2. **Access Control**: Access to secrets is strictly regulated through Kubernetes Role-Based Access Control (RBAC) policies. These policies define who (which users or applications) can access or modify the secrets. By implementing strict access controls, you can ensure that only authorized entities can retrieve or manipulate the secret data.
-
-3. **Usage**: When a pod needs to access a secret, the secret is mounted as a volume or exposed as an environment variable within the container, based on the specifications in the pod definition. This approach keeps secrets abstracted away from application code, reducing the risk of accidental exposure.
-
-4. **Rotation and Management**: Secrets should be periodically rotated to minimize the risks associated with potential leaks or unauthorized access. Kubernetes allows for updating secrets without redeploying the associated pods. Once a secret is updated, the mounted volumes within the pods are automatically updated as well.
-
-5. **Avoiding Git Storage**: To prevent secrets from being stored in Git, it is essential to exclude secret objects from source code and configuration files. Instead of hardcoding secrets, applications should be designed to retrieve them dynamically from Kubernetes at runtime. Additionally, tools like Git hooks and linters can help prevent accidental commits of sensitive data.
-
 ## Prerequisites
 
 > **Blank OpenShift Cluster** - Have a fresh OpenShift cluster installed before attempting to create these reference patterns.
