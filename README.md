@@ -42,7 +42,7 @@ The decision to use one or both of these tools would depend on the specific requ
 
 ## Prerequisites
 
-- **Blank OpenShift Cluster**: Have a fresh OpenShift cluster installed before attempting to create these reference patterns.
+- **Blank OpenShift Cluster** - Have a fresh OpenShift cluster installed before attempting to create these reference patterns.
 
 ## Getting Started
 
