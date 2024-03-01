@@ -12,16 +12,15 @@ Effective secrets management in Kubernetes helps in maintaining robust security 
 ## Available Patterns
 
 ### External-Secrets
-- Syncing Secrets from AWS Secrets Manager
-- Syncing Secrets from Azure Key Vault
-- Syncing Secrets from K8s Clusters
-- Syncing Secrets from Hashicorp Vault
+
+- **Foundational Patterns** - [Example](https://github.com/poc-examples/managing-secrets/tree/main/patterns/external-secrets/foundational) - Bootstrapping the operator, authenticating a ClusterSecretStore, and pulling a secret.
+- **Team Based** - [Example](https://github.com/poc-examples/managing-secrets/tree/main/patterns/external-secrets/teams-based) - A Pattern for allowing teams to control their own External Secrets.
 
 ### Secrets-CSI-Driver
-- Mounting Secrets as Volumes
+- TBC
 
 ### Hybrid Configuration
-- Dynamic Secret Updates
+- TBC
 
 ## Why These Patterns
 
