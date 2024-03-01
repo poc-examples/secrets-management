@@ -1,3 +1,1 @@
-# Placeholder for objects
-
-Will implement this soon as trial to replace ESO
+# Secrets CSI Driver Pattern
