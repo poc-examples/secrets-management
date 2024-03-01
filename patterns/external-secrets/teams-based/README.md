@@ -6,8 +6,8 @@ The pattern depicted in the image illustrates an approach to managing secrets in
 
 ## Admin role:
 
-1. The External Secrets Operator is deployed into the openshift-operators namespace.
-2. A service principal (which is an Azure identity) is created in the openshift-operators namespace. This service principal has credentials that are used to interact with Azure Key Vault.
+1. The External Secrets Operator is deployed into the `openshift-operators` namespace.
+2. A service principal (which is an Azure identity) is created in the `openshift-operators` namespace. This service principal has credentials that are used to interact with Azure Key Vault.
 3. In an admin-controlled namespace, the admin creates ClusterSecretStore resources with limited namespace access. These are linked to the Azure Key Vault using the service principal credentials. The ClusterSecretStore is an OpenShift resource that references an external store where the actual secrets are kept.
 
 ## Team role:
