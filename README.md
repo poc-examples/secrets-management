@@ -42,9 +42,11 @@ The decision to use one or both of these tools would depend on the specific requ
 
 ## Prerequisites
 
-What things you need to install the software and how to install them:
+1. **Blank OpenShift Cluster**: Have a fresh OpenShift cluster installed before attempting to create these reference patterns.
 
-```Give examples```
+2. **Prepare Cluster w/ Bootstraper**: Reference the repository [poc-examples/bootstrap-openshift](https://github.com/poc-examples/bootstrap-openshift)
+
+
 
 ## Getting Started
 
