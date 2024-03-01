@@ -1,7 +1,9 @@
 # Managing Secrets in OpenShift
 
-- Presentation: [Slide Deck](https://docs.google.com/presentation/d/17zfCQTKKynqM6dPdprr5_7CHdMGJiaZQ_3Ft_Gqog5Q/view)
-- Demonstration: [Example Deployment](https://www.youtube.com/)
+![Teams Based Secrets](https://raw.githubusercontent.com/poc-examples/managing-secrets/main/images/team-based-secrets.png "Teams Based Secrets")
+
+- Slide Deck: [Demonstration](https://docs.google.com/presentation/d/17zfCQTKKynqM6dPdprr5_7CHdMGJiaZQ_3Ft_Gqog5Q/view)
+- Demonstration: [Teams Based External Secrets](https://www.youtube.com/)
 
 In Kubernetes environments, secrets management is crucial for safeguarding sensitive data such as passwords, tokens, and keys, ensuring that this information is securely stored, transmitted, and accessed only by authorized entities. 
 
