@@ -14,7 +14,7 @@ Effective secrets management in Kubernetes helps in maintaining robust security 
 ### External-Secrets
 
 - **Foundational Patterns** - [Example](https://github.com/poc-examples/managing-secrets/tree/main/patterns/external-secrets/foundational) - Bootstrapping the operator, authenticating a ClusterSecretStore, and pulling a secret.
-- **Team Based** - [Example](https://github.com/poc-examples/managing-secrets/tree/main/patterns/external-secrets/teams-based) - A Pattern for allowing teams to control their own External Secrets.
+- **Team Based** - [Example](https://github.com/poc-examples/managing-secrets/tree/main/patterns/external-secrets/teams-based) - Expands on foundational patterns in order to allow teams to control their own External Secrets.
 
 ### Secrets-CSI-Driver
 - TBC
