@@ -9,7 +9,7 @@ Without proper secrets management, sensitive data could inadvertently be exposed
 
 Effective secrets management in Kubernetes helps in maintaining robust security practices, compliance with data protection regulations, and the overall integrity of the application environment.
 
-## Available Patterns
+## Patterns
 
 ### External-Secrets
 
