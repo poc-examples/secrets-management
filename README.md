@@ -11,13 +11,13 @@ Effective secrets management in Kubernetes helps in maintaining robust security 
 
 ## Available Patterns
 
-> External-Secrets
+### External-Secrets
 - Syncing Secrets from AWS Secrets Manager
 - Syncing Secrets from Azure Key Vault
 - Syncing Secrets from K8s Clusters
 - Syncing Secrets from Hashicorp Vault
 
-> Secrets-CSI-Driver
+### Secrets-CSI-Driver
 - Mounting Secrets as Volumes
 
 ## Why These Patterns
