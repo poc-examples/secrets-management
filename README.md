@@ -86,7 +86,7 @@ We use SemVer for versioning. For the versions available, see the tags on this r
 
 ## Authors
 
-- Christopher Engleby - [poc-examples](https://github.com/poc-examples)
+- Christopher Engleby - [Linked-In](https://www.linkedin.com/in/christopher-engleby-116a87aa/)
 
 See also the list of contributors who participated in this project.
 
