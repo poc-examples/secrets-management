@@ -1,7 +1,5 @@
 # Managing Secrets in OpenShift
 
-![Teams Based Secrets](https://raw.githubusercontent.com/poc-examples/managing-secrets/main/images/team-based-secrets.png "Teams Based Secrets")
-
 - Slide Deck: [Demonstration](https://docs.google.com/presentation/d/17zfCQTKKynqM6dPdprr5_7CHdMGJiaZQ_3Ft_Gqog5Q/view)
 - Demonstration: [Teams Based External Secrets](https://www.youtube.com/)
 

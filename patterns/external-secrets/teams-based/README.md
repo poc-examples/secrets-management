@@ -1,5 +1,7 @@
 # External Secrets - Teams Based Secrets Management
 
+![Teams Based Secrets](https://raw.githubusercontent.com/poc-examples/managing-secrets/main/images/team-based-secrets.png "Teams Based Secrets")
+
 The pattern depicted in the image illustrates an approach to managing secrets in an OpenShift environment using the External Secrets Operator and Azure Key Vault. The process is divided into two main roles: Admin and Team, each with specific steps to securely manage and utilize secrets.
 
 ## Admin role:
