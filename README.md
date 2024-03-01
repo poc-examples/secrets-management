@@ -17,10 +17,10 @@ Effective secrets management in Kubernetes helps in maintaining robust security 
 - **Team Based** - [Example](https://github.com/poc-examples/managing-secrets/tree/main/patterns/external-secrets/teams-based) - Expands on foundational patterns in order to allow teams to control their own External Secrets.
 
 ### Secrets-CSI-Driver
-- TBC
+- TBC - [Notes](https://github.com/poc-examples/managing-secrets/tree/main/patterns/secrets-csi-driver)
 
 ### Hybrid Configuration
-- TBC
+- TBC - [Notes](https://github.com/poc-examples/managing-secrets/tree/main/patterns/hybrid-configuration)
 
 ## Why These Patterns
 
