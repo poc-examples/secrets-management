@@ -42,25 +42,77 @@ The decision to use one or both of these tools would depend on the specific requ
 
 ## Prerequisites
 
-1. **Blank OpenShift Cluster**: Have a fresh OpenShift cluster installed before attempting to create these reference patterns.
-
-2. **Prepare Cluster w/ Bootstraper**: Reference the repository [poc-examples/bootstrap-openshift](https://github.com/poc-examples/bootstrap-openshift)
-
-
+- **Blank OpenShift Cluster**: Have a fresh OpenShift cluster installed before attempting to create these reference patterns.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+**Bootstrap the Cluster**: Reference the repository [poc-examples/bootstrap-openshift](https://github.com/poc-examples/bootstrap-openshift), configure the demo settings.
+
+
+```
+openshift:
+
+  token: "<OPENSHIFT_TOKEN>"
+  api_url: "<OPENSHIFT_API_URL>"
+  validate_certs: false
+
+  # machines:
+
+  #   - spot: true
+  #     gpu: true
+  #     replicas: 1
+  #     location: eastus
+  #     zone: "1"
+
+operators:
+
+  gitops:
+    namespace: openshift-operators
+    channel: gitops-1.11
+
+  external_secrets:
+    namespace: openshift-operators
+    channel: stable
+
+secrets:
+
+  namespace: openshift-operators
+
+  # azure:
+  #   client_id: "<CLIENT_ID>"
+  #   client_secret: "<CLIENT_SECRET>"
+  #   tenant_id: "<TENANT_ID>"
+  #   vault_url: "<VAULT_URL>"
+
+  # aws:
+  #   access_key_id: "<AWS_ACCESS_KEY_ID>"
+  #   secret_access_key: "<AWS_SECRET_ACCESS_KEY>"
+  #   default_region: "<AWS_DEFAULT_REGION>"
+
+gitops:
+
+  namespace: openshift-gitops
+
+  plugins:
+    - repo: poc-examples/managing-secrets
+      path: patterns/aws-keys
+      name: managing-secrets-demo
+
+external_secrets:
+  namespace: external-secrets
+```
 
 ## Running the Tests
 
 Explain how to run the automated tests for this system. Include any relevant commands.
 
-## Built With
+## Tools Used
 
-- Tool/Framework 1 - The web framework used
-- Tool/Framework 2 - Dependency Management
-- Tool/Framework 3 - Used to generate RSS Feeds
+- OpenShift
+- Ansible
+- External Secrets Operator
+- Secrets CSI Driver
+- Argo CD
 
 ## Contributing
 
