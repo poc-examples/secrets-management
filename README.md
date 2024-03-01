@@ -40,45 +40,6 @@ The decision to use one or both of these tools would depend on the specific requ
 
 
 ```
-openshift:
-
-  token: "<OPENSHIFT_TOKEN>"
-  api_url: "<OPENSHIFT_API_URL>"
-  validate_certs: false
-
-  # machines:
-
-  #   - spot: true
-  #     gpu: true
-  #     replicas: 1
-  #     location: eastus
-  #     zone: "1"
-
-operators:
-
-  gitops:
-    namespace: openshift-operators
-    channel: gitops-1.11
-
-  external_secrets:
-    namespace: openshift-operators
-    channel: stable
-
-secrets:
-
-  namespace: openshift-operators
-
-  # azure:
-  #   client_id: "<CLIENT_ID>"
-  #   client_secret: "<CLIENT_SECRET>"
-  #   tenant_id: "<TENANT_ID>"
-  #   vault_url: "<VAULT_URL>"
-
-  # aws:
-  #   access_key_id: "<AWS_ACCESS_KEY_ID>"
-  #   secret_access_key: "<AWS_SECRET_ACCESS_KEY>"
-  #   default_region: "<AWS_DEFAULT_REGION>"
-
 gitops:
 
   namespace: openshift-gitops
@@ -87,9 +48,6 @@ gitops:
     - repo: poc-examples/managing-secrets
       path: patterns/aws-keys
       name: managing-secrets-demo
-
-external_secrets:
-  namespace: external-secrets
 ```
 
 Execute the bootstrapper.
