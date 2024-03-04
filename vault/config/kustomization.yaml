@@ -13,11 +13,9 @@ helmCharts:
     namespace: vault-server
     valuesInline:
       global:
+        externalVaultAddr: http://vault-server-internal.vault-server.svc.cluster.local:8200
         openshift: true
       server:
-        image:
-          repository: "registry.connect.redhat.com/hashicorp/vault"
-          tag: "1.8.0-ubi"
         dev:
           enabled: true
         enabled: true
