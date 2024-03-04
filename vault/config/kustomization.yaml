@@ -22,3 +22,5 @@ helmCharts:
         enabled: false
       csi:
         enabled: true
+        daemonSet:
+          providersDir: "/var/run/secrets-store-csi-providers"
