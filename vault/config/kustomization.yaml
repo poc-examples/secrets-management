@@ -25,5 +25,5 @@ helmCharts:
         daemonSet:
           providersDir: "/var/run/secrets-store-csi-providers"
 
-patchesStrategicMerge:
+patches:
   - daemonset-patch.yaml
