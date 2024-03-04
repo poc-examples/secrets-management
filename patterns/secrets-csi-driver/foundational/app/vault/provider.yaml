@@ -6,7 +6,7 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: kube-system
+    namespace: vault-csi-provider
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://github.com/poc-examples/managing-secrets'
@@ -18,4 +18,4 @@ spec:
       labels:
         argocd.argoproj.io/managed-by: openshift-gitops
     syncOptions:
-      - CreateNamespace=false
+      - CreateNamespace=true
