@@ -11,11 +11,11 @@ metadata:
     argocd.argoproj.io/sync-wave: "-2"
 spec:
   destination:
-    namespace: kube-system
+    namespace: vault-csi-driver-controller
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://github.com/poc-examples/managing-secrets'
-    path: 'patterns/secrets-csi-driver/foundational/driver'
+    path: 'patterns/secrets-csi-driver/foundational/provider/vault'
     targetRevision: HEAD
   project: default
   syncPolicy:
@@ -23,4 +23,4 @@ spec:
       labels:
         argocd.argoproj.io/managed-by: openshift-gitops
     syncOptions:
-      - CreateNamespace=false
+      - CreateNamespace=true
