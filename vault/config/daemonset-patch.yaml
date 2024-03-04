@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: vault-server-csi-provider
+spec:
+  template:
+    spec:
+      containers:
+      - name: vault-csi-provider
+        securityContext:
+          privileged: true

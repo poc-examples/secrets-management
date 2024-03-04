@@ -13,7 +13,6 @@ helmCharts:
     namespace: vault-server
     valuesInline:
       global:
-        externalVaultAddr: http://vault-server-internal.vault-server.svc.cluster.local:8200
         openshift: true
       server:
         dev:
@@ -25,3 +24,6 @@ helmCharts:
         enabled: true
         daemonSet:
           providersDir: "/var/run/secrets-store-csi-providers"
+
+patchesStrategicMerge:
+  - daemonset-patch.yaml
