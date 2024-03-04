@@ -6,6 +6,14 @@ resources:
 - rbac.yaml
 
 helmCharts:
+- name: secrets-store-csi-driver
+  repo: https://kubernetes-sigs.github.io/secrets-store-csi-driver/charts
+  version: 1.4.1
+  releaseName: secrets-store-csi-driver
+  namespace: kube-system
+  valuesInline:
+    linux:
+      providersDir: "/var/run/secrets-store-csi-providers"
 - name: vault
   namespace: vault-server
   releaseName: vault-server
