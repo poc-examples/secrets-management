@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
   - route.yaml
-  # - rbac.yaml
+  - rbac.yaml
 
 helmCharts:
   - name: vault
