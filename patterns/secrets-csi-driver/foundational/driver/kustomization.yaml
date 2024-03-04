@@ -7,3 +7,6 @@ helmCharts:
     version: 1.4.1
     releaseName: secrets-store-csi-driver
     namespace: kube-system
+    valuesInline:
+      linux:
+        providersDir: "/var/run/secrets-store-csi-providers"
