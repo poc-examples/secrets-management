@@ -18,4 +18,4 @@ spec:
       labels:
         argocd.argoproj.io/managed-by: argocd
     syncOptions:
-      - CreateNamespace=true
+      - CreateNamespace=false
