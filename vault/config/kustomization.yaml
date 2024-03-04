@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
   - vault-secret-store.yaml
+  - route.yaml
 
 helmCharts:
   - name: vault
