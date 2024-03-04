@@ -12,6 +12,8 @@ helmCharts:
     releaseName: vault-server
     namespace: vault-server
     valuesInline:
+      linux:
+        providersDir: "/var/run/secrets-store-csi-providers"
       global:
         openshift: true
       server:
