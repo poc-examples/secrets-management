@@ -1,0 +1,13 @@
+secrets:
+  admin:
+    namespace: cluster-secrets-admin
+
+teams:
+  - name: team-a
+    namespaces:
+      - "project-a"
+      - "project-b"
+  - name: team-b
+    namespaces:
+      - "project-c"
+      - "project-d"

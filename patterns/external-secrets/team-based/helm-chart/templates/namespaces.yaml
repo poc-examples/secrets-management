@@ -1,5 +1,0 @@
-apiVersion: v1
-kind: Namespace
-name: vault-server
-metadata:
-  name: vault-server

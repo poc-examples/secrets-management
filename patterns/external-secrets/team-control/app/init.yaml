@@ -10,14 +10,17 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://github.com/poc-examples/managing-secrets'
-    path: 'patterns/external-secrets/team-control'
+    path: 'patterns/external-secrets/team-control/app'
     targetRevision: HEAD
+    helm:
+      valueFiles:
+        - ../values.yaml
   project: default
   syncPolicy:
     managedNamespaceMetadata:
       labels:
-        argocd.argoproj.io/managed-by: argocd
+        argocd.argoproj.io/managed-by: openshift-gitops
     syncOptions:
       - CreateNamespace=true
     automated:
-      prune: true
+      prune: false

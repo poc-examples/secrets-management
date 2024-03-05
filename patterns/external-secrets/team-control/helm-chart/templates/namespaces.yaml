@@ -1,0 +1,21 @@
+{{- range .Values.teams }}
+apiVersion: v1
+kind: Namespace
+name: {{ .name }}-gitops
+metadata:
+  name: {{ .name }}-gitops
+  labels:
+    argocd.argoproj.io/managed-by: {{ .name }}-gitops
+---
+{{ $name := .name }}
+{{- range .namespaces }}
+apiVersion: v1
+kind: Namespace
+name: {{ . }}
+metadata:
+  name: {{ . }}
+  labels:
+    argocd.argoproj.io/managed-by: {{ $name }}-gitops
+---
+{{- end }}
+{{- end }}

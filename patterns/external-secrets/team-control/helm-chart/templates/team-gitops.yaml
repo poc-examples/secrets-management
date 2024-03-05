@@ -1,0 +1,13 @@
+{{- range .Values.teams }}
+apiVersion: argoproj.io/v1beta1
+kind: ArgoCD
+metadata:
+  name: {{ .name }}-gitops
+  namespace: {{ .name }}-gitops
+spec:
+  server:
+    route:
+      enabled: true
+  kustomizeBuildOptions: '--enable-helm'
+---
+{{- end }}
