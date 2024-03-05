@@ -1,7 +1,6 @@
 {{- range .Values.teams }}
 apiVersion: v1
 kind: Namespace
-name: {{ .name }}-gitops
 metadata:
   name: {{ .name }}-gitops
   labels:
@@ -11,7 +10,6 @@ metadata:
 {{- range .namespaces }}
 apiVersion: v1
 kind: Namespace
-name: {{ . }}
 metadata:
   name: {{ . }}
   labels:
