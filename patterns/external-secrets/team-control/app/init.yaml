@@ -10,7 +10,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://github.com/poc-examples/managing-secrets'
-    path: 'patterns/external-secrets/team-control/app'
+    path: 'patterns/external-secrets/team-control/helm-chart'
     targetRevision: HEAD
     helm:
       valueFiles:
